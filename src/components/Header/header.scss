@@ -1,0 +1,29 @@
+@import '../../App.scss';
+.ab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+h1{
+   
+    @include btn(white)
+}
