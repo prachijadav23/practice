@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Card from './components/Card/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('demo'));
 root.render(
   <React.StrictMode>
  <Header/>
+ <Card />
  <Footer/>
   </React.StrictMode>
 );
