@@ -1,0 +1,25 @@
+.mainbtns{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    button{
+        height: 50px;
+        width: auto;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: purple;
+        margin: 10px;
+       
+
+        &:hover{
+            background-color: white;
+            color: purple;
+            box-shadow: 0px 0px 4px 0px black;
+            border: none;
+        }
+        
+    }
+}

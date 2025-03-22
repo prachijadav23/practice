@@ -1,19 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
-import reportWebVitals from './reportWebVitals';
-
+import About from './components/About/About';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Card from './components/Card/Card';
+import Home from './components/Home/Home';
+import Contact from './components/Contact/Contact';
+
+import Products from './components/Products/Products';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('demo'));
 root.render(
   <React.StrictMode>
- <Header/>
- <Card />
- <Footer/>
+
+<BrowserRouter>
+<Header/>
+<Routes>
+<Route path='/' element={<Home/>}/>
+<Route path='/products' element={<Products/>}/>
+<Route path='/about' element={<About/>}/>
+<Route path='/contact' element={<Contact/>}/>
+</Routes>
+<Footer />
+</BrowserRouter>
   </React.StrictMode>
 );
 

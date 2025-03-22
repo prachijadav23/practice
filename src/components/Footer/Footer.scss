@@ -1,3 +1,25 @@
 @mixin ab{
     color: aqua;
 }
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+
+    
+    
+    
+
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+       
+    }
+}
